@@ -3,7 +3,7 @@
 ### Contacts
    - Mail: nskrabnevsky@mail.ru
    - Phone: +375 00 000-00-00
-   - Discord: nikskr#****
+   - Discord: nikskr#...
 ***
 ### About
    Front-End Student
@@ -22,7 +22,6 @@
    + Russian
    + Belarusian
    + English (Pre-Intermediate)
-***
 
 
 
