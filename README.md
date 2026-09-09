@@ -1,1 +1,1 @@
-**[CV on GitHub Pages](https://nikskr.github.io/rsschool-cv/cv)**
+**[CV on GitHub Pages using HTML, CSS](https://nikskr.github.io/rsschool-cv/)**
