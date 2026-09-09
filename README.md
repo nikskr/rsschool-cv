@@ -1,1 +1,1 @@
-# rsschool-cv
+**[CV on GitHub Pages using HTML, CSS](https://nikskr.github.io/rsschool-cv/)**
