@@ -90,17 +90,11 @@ export const weatherAPI = createApi({
 ## Education
 
 
--**BSUIR** - *2022* - Bachelor's degree
--**BSUIR** - *2024* - Master's degree
+- *2022* - **BSUIR** - Bachelor's degree
+- *2024* - **BSUIR** - Master's degree
 
 ---
 
 ## English - ***B1***
 
-
-
-
-
-
-
-
+> I have advanced reading skills, and intermediate listening and writing skills. I am working on my speaking.
