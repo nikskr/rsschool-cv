@@ -1,19 +1,17 @@
 # Mikita Skrabneuski
 
 
-![Profile](/images/profile.png "Profile")
+![Profile](/images/profile.jpg "Profile")
 
 
 *Minsk, Belarus*
 
-
-===
+---
 
 
 ## Contact
 
 ***nskrabnevsky@gmail.com***
-
 
 ---
 
@@ -23,7 +21,6 @@
 
 > My goal is to become a professional in full-stack development. I completed an internship as a Salesforce Developer, where I created web forms, LWC components, Apex classes, triggers, created API endpoints, developed integrations using MuleSoft. Also, I participated in the TMS FrontEnd course, where I learned basics of FrontEnd development from HTML to React, Redux, and RTK Query.
 
-
 ---
 
 
@@ -31,7 +28,6 @@
 
 
 `Git` `Markdown` `HTML` `CSS` `Tailwind` `Bootstrap` `Javascript` `Typescript` `React` `Redux` `RTK Query` `API` `Postman` `Node.js` `Express` `Salesforce` `Apex` `LWC` `Firebase`
-
 
 ---
 
@@ -72,20 +68,21 @@ export const weatherAPI = createApi({
 })
 ```
 
-
 ---
 
 
 ## Work experience
 
 
-* [Weather App](https://nikskr.github.io/weather-frontend-app/) - [GitHub](https://github.com/nikskr/weather-frontend-app)
+* [Weather App](https://nikskr.github.io/weather-frontend-app/) - 
+    [GitHub](https://github.com/nikskr/weather-frontend-app) - 
     `Git` `Typescript` `React` `Vite` `Redux`
-* [Posts App](https://nikskr.github.io/posts-react-app/) - [GitHub](https://github.com/nikskr/posts-react-app)
+* [Posts App](https://nikskr.github.io/posts-react-app/) - 
+    [GitHub](https://github.com/nikskr/posts-react-app) - 
     `Git` `Javascript` `React` `Axios`
-* [Store Page](https://nikskr.github.io/abito-app/) - [GitHub](https://github.com/nikskr/abito-app)
+* [Store Page](https://nikskr.github.io/abito-app/) - 
+    [GitHub](https://github.com/nikskr/abito-app) - 
     `Git` `HTML` `CSS` `JS`
-
 
 ---
 
@@ -96,10 +93,9 @@ export const weatherAPI = createApi({
 -**BSUIR** - *2022* - Bachelor's degree
 -**BSUIR** - *2024* - Master's degree
 
+---
 
-## English
-
-**B1**
+## English - ***B1***
 
 
 
