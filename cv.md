@@ -1,7 +1,7 @@
 # Mikita Skrabneuski
 
 
-![Profile](/images/profile.jpg "Profile")
+![Profile](/rsschool-cv/images/profile.jpg "Profile")
 
 
 *Minsk, Belarus*
@@ -98,3 +98,5 @@ export const weatherAPI = createApi({
 ## English - ***B1***
 
 > I have advanced reading skills, and intermediate listening and writing skills. I am working on my speaking.
+
+---
