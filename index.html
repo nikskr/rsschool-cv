@@ -1,11 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>CV</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <header>
+            <div class="header__primary-info">
+                <h1>Mikita Skrabneuski</h1>
+                <p class="header-position">Full Stack Developer</p>
+                <img class="profile-img" src="/images/profile.jpg" alt="Profile">
+                <p class="header-location">Minsk, Belarus</p>
+            </div>
+            <div class="header__contacts-info">
+                <h3>Contacts</h3>
+                <ul class="contacts-list">
+                    <li>Email: <span><a href="mailto:nskrabnevsky@gmail.com">nskrabnevsky@gmail.com</a></span></li>
+                    <li>Discord: <span>Mikita (@nikskr)</span></li>
+                </ul>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#code">Code</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#english">English</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <section class="main__section" id="about">
+                <h2 class="section__title">About</h2>
+                <div class="section__info">
+                    <blockquote>
+                        My goal is to become a professional in full-stack development.
+                        I completed an internship as a Salesforce Developer,
+                        where I created web forms, LWC components, Apex classes, triggers,
+                        created API endpoints, developed integrations using MuleSoft.
+                        Also, I participated in the TMS Front End course,
+                        where I learned basics of front end development from HTML to React, Redux, and RTK Query.
+                    </blockquote>
+                </div>
+            </section>
+            <hr>
+            <section class="main__section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <div class="section__info">
+                    <ul class="skill-list">
+                        <li class="skill-item">Git</li>
+                        <li class="skill-item">Markdown</li>
+                        <li class="skill-item">HTML</li>
+                        <li class="skill-item">CSS</li>
+                        <li class="skill-item">Tailwind</li>
+                        <li class="skill-item">Bootstrap</li>
+                        <li class="skill-item">Javascript</li>
+                        <li class="skill-item">Typescript</li>
+                        <li class="skill-item">React</li>
+                        <li class="skill-item">Redux</li>
+                        <li class="skill-item">RTK Query</li>
+                        <li class="skill-item">API</li>
+                        <li class="skill-item">Postman</li>
+                        <li class="skill-item">Node.js</li>
+                        <li class="skill-item">Express</li>
+                        <li class="skill-item">Salesforce</li>
+                        <li class="skill-item">Apex</li>
+                        <li class="skill-item">LWC</li>
+                        <li class="skill-item">Firebase</li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            <section class="main__section" id="code">
+                <h2 class="section__title">Code example</h2>
+                <div class="section__info">
+                    <div class="code-example-item">
+                        <h3>
+                            <a
+                                href="https://github.com/nikskr/weather-frontend-app/blob/dev/src/service/WeatherService.ts">
+                                Create API service using RTK Query
+                            </a>
+                        </h3>
+                        <pre class="code-wrapper">
+                            <code>
+                                import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+                                import { type ICityForecast, type ILocationCurrentWeather } from "../models/IWeather";
+
+                                export const weatherAPI = createApi({
+                                    reducerPath: 'currentWeatherAPI',
+                                    baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_BASE_API_URL }),
+                                    endpoints: (builder) => ({
+                                        fetchCurrentWeatherByLocation: builder.query<ILocationCurrentWeather, string>({
+                                            query: (location) => ({
+                                                url: '/current.json',
+                                                params: {
+                                                    q: location,
+                                                    key: import.meta.env.VITE_WEATHER_API_KEY
+                                                }
+                                            })
+                                        }),
+                                        fetchForecastByLocation: builder.query<ICityForecast, string>({
+                                            query: (location) => ({
+                                                url: '/forecast.json',
+                                                params: {
+                                                    q: location,
+                                                    key: import.meta.env.VITE_WEATHER_API_KEY,
+                                                    days: 14
+                                                }
+                                            })
+                                        })
+
+                                    })
+                                })
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="main__section" id="experience">
+                <h2 class="section__title">Work Experience</h2>
+                <div class="section__info">
+                    <ul class="work-list">
+                        <li class="work-item">
+                            <a href="https://nikskr.github.io/weather-frontend-app/">Weather App</a> -
+                            <a href="https://github.com/nikskr/weather-frontend-app">GitHub</a> -
+                            <ul class="skill-list inline-block">
+                                <li class="skill-item">Git</li>
+                                <li class="skill-item">Typescript</li>
+                                <li class="skill-item">React</li>
+                                <li class="skill-item">Vite</li>
+                                <li class="skill-item">Redux</li>
+                            </ul>
+                        </li>
+                        <li class="work-item">
+                            <a href="https://nikskr.github.io/posts-react-app/">Posts App</a> -
+                            <a href="">GitHub</a> -
+                            <ul class="skill-list inline-block">
+                                <li class="skill-item">Git</li>
+                                <li class="skill-item">Javascript</li>
+                                <li class="skill-item">React</li>
+                                <li class="skill-item">Axios</li>
+                            </ul>
+                        </li>
+                        <li class="work-item">
+                            <a href="https://nikskr.github.io/abito-app/">Store Page</a> -
+                            <a href="https://github.com/nikskr/abito-app">GitHub</a> -
+                            <ul class="skill-list inline-block">
+                                <li class="skill-item">Git</li>
+                                <li class="skill-item">HTML</li>
+                                <li class="skill-item">CSS</li>
+                                <li class="skill-item">Javascript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            <section class="main__section" id="education">
+                <h2 class="section__title">Education</h2>
+                <div class="section__info">
+                    <ul class="education-list">
+                        <li>
+                            <div>
+                                <i>2022</i> -
+                                <strong>BSUIR</strong> -
+                                Bachelor's degree
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i>2024</i> -
+                                <strong>BSUIR</strong> -
+                                Master's degree
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            <section class="main__section" id="english">
+                <h2 class="section__title">English - <i>B1</i></h2>
+                <div class="section__info">
+                    <blockquote>
+                        I have advanced reading skills, and intermediate listening
+                        and writing skills. I am working on my speaking.
+                    </blockquote>
+                </div>
+            </section>
+        </main>
+        <hr>
+        <footer class="footer">
+            <ul class="footer__link-list">
+                <li>
+                    <a href="https://github.com/nikskr">
+                        <img class="icon-link footer__icon" src="/images/icons/github-logo.svg" alt="GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://rs.school/courses/javascript">
+                        <img class="icon-link footer__icon" src="/images/icons/rs-school-logo.svg" alt="RSS Course">
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__year-text">2026</p>
+
+        </footer>
+    </div>
 </body>
+
 </html>
