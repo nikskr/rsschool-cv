@@ -22,7 +22,7 @@
                 <p class="header-location">Minsk, Belarus</p>
             </div>
             <div class="header__contacts-info">
-                <h3>Contacts</h3>
+                <h2>Contacts</h2>
                 <ul class="contacts-list">
                     <li>Email: <span><a href="mailto:nskrabnevsky@gmail.com">nskrabnevsky@gmail.com</a></span></li>
                     <li>Discord: <span>Mikita (@nikskr)</span></li>
@@ -100,9 +100,9 @@
                                 export const weatherAPI = createApi({
                                     reducerPath: 'currentWeatherAPI',
                                     baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_BASE_API_URL }),
-                                    endpoints: (builder) => ({
-                                        fetchCurrentWeatherByLocation: builder.query<ILocationCurrentWeather, string>({
-                                            query: (location) => ({
+                                    endpoints: (builder) =&gt; ({
+                                        fetchCurrentWeatherByLocation: builder.query&lt;ILocationCurrentWeather, string&gt;({
+                                            query: (location) =&gt; ({
                                                 url: '/current.json',
                                                 params: {
                                                     q: location,
@@ -110,8 +110,8 @@
                                                 }
                                             })
                                         }),
-                                        fetchForecastByLocation: builder.query<ICityForecast, string>({
-                                            query: (location) => ({
+                                        fetchForecastByLocation: builder.query&lt;ICityForecast, string&gt;({
+                                            query: (location) =&gt; ({
                                                 url: '/forecast.json',
                                                 params: {
                                                     q: location,
@@ -120,7 +120,6 @@
                                                 }
                                             })
                                         })
-
                                     })
                                 })
                             </code>
@@ -215,7 +214,6 @@
                 </li>
             </ul>
             <p class="footer__year-text">2026</p>
-
         </footer>
     </div>
 </body>
