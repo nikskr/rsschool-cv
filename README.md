@@ -1,1 +1,2 @@
-**[CV on GitHub Pages using HTML, CSS](https://nikskr.github.io/rsschool-cv/)**
+[CV using Markdown](https://GITHUB-USERNAME.github.io/rsschool-cv/cv)
+[CV using HTML](https://GITHUB-USERNAME.github.io/rsschool-cv/)
