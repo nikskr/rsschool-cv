@@ -123,7 +123,8 @@ header,
 
 .nav-link:hover {
     color: #fff;
-    background-color: rgb(74, 168, 226);;
+    background-color: rgb(74, 168, 226);
+    ;
 }
 
 main {
@@ -163,11 +164,16 @@ main {
 }
 
 .code-wrapper {
+    padding-left: 30px;
     max-width: 100%;
     border-radius: 10px;
     background-color: lightgrey;
     overflow-x: auto;
     white-space: pre;
+}
+
+code {
+    font-family: "Cascadia Code", sans-serif;
 }
 
 .work-item {

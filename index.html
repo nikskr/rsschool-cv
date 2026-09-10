@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>CV</title>
 </head>
@@ -94,34 +95,34 @@
                         </h3>
                         <pre class="code-wrapper">
                             <code>
-                                import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-                                import { type ICityForecast, type ILocationCurrentWeather } from "../models/IWeather";
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { type ICityForecast, type ILocationCurrentWeather } from "../models/IWeather";
 
-                                export const weatherAPI = createApi({
-                                    reducerPath: 'currentWeatherAPI',
-                                    baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_BASE_API_URL }),
-                                    endpoints: (builder) =&gt; ({
-                                        fetchCurrentWeatherByLocation: builder.query&lt;ILocationCurrentWeather, string&gt;({
-                                            query: (location) =&gt; ({
-                                                url: '/current.json',
-                                                params: {
-                                                    q: location,
-                                                    key: import.meta.env.VITE_WEATHER_API_KEY
-                                                }
-                                            })
-                                        }),
-                                        fetchForecastByLocation: builder.query&lt;ICityForecast, string&gt;({
-                                            query: (location) =&gt; ({
-                                                url: '/forecast.json',
-                                                params: {
-                                                    q: location,
-                                                    key: import.meta.env.VITE_WEATHER_API_KEY,
-                                                    days: 14
-                                                }
-                                            })
-                                        })
-                                    })
-                                })
+export const weatherAPI = createApi({
+    reducerPath: 'currentWeatherAPI',
+    baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_BASE_API_URL }),
+    endpoints: (builder) =&gt; ({
+        fetchCurrentWeatherByLocation: builder.query&lt;ILocationCurrentWeather, string&gt;({
+            query: (location) =&gt; ({
+                url: '/current.json',
+                params: {
+                    q: location,
+                    key: import.meta.env.VITE_WEATHER_API_KEY
+                }
+            })
+        }),
+        fetchForecastByLocation: builder.query&lt;ICityForecast, string&gt;({
+            query: (location) =&gt; ({
+                url: '/forecast.json',
+                params: {
+                    q: location,
+                    key: import.meta.env.VITE_WEATHER_API_KEY,
+                    days: 14
+                }
+            })
+        })
+    })
+})
                             </code>
                         </pre>
                     </div>
